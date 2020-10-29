@@ -1,4 +1,14 @@
+import java.util.ArrayList;
 
-public abstract class ProcesamientoFicheroPlano extends ProcesamientoFichero implements IProcesamientoFichero {
+public class ProcesamientoFicheroPlano extends ProcesamientoFichero {
+	
+	public ArrayList <String> leerFichero(String ruta){
+		
+		return null;
+	}
+	
+	public void guardarFichero(ArrayList<String>ArrayLibro) {
+		
+	}
 
 }
