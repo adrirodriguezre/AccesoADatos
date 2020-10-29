@@ -2,6 +2,6 @@ import java.util.ArrayList;
 
 public interface IProcesamientoFichero {
 
-	public ArrayList <String> leerFichero(String ruta);
-	public void guardarFichero(ArrayList<String>ArrayLibro);
+	public ArrayList <Libro> leerFichero(String ruta);
+	public void guardarFichero(ArrayList<Libro>ArrayLibro);
 }

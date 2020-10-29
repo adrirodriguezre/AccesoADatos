@@ -1,13 +1,21 @@
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.util.ArrayList;
 
 public class ProcesamientoFicheroPlano extends ProcesamientoFichero {
 	
-	public ArrayList <String> leerFichero(String ruta){
+	public ArrayList <Libro> leerFichero(String ruta){
 		
+		try {
+			FileReader fr = new FileReader(ruta);
+			
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
 		return null;
 	}
 	
-	public void guardarFichero(ArrayList<String>ArrayLibro) {
+	public void guardarFichero(ArrayList<Libro>ArrayLibro) {
 		
 	}
 
