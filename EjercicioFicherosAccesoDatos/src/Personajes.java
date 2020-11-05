@@ -2,7 +2,7 @@
 public class Personajes {
 	
 	private String nombre;
-	private String genero;
+	private String generoPers;
 	private String importancia;
 	
 	public String getNombre() {
@@ -13,12 +13,12 @@ public class Personajes {
 		this.nombre = nombre;
 	}
 
-	public String getGenero() {
-		return genero;
+	public String getGeneroPers() {
+		return generoPers;
 	}
 
-	public void setGenero(String genero) {
-		this.genero = genero;
+	public void setGeneroPers(String generoPers) {
+		this.generoPers = generoPers;
 	}
 
 	public String getImportancia() {
@@ -29,11 +29,16 @@ public class Personajes {
 		this.importancia = importancia;
 	}
 
-	public Personajes(String nombre, String genero, String importancia) {
+	public Personajes(String nombre, String generoPers, String importancia) {
 		super();
 		this.nombre = nombre;
-		this.genero = genero;
+		this.generoPers = generoPers;
 		this.importancia = importancia;
+	}
+	
+	public String toString() {
+		
+		return " Nombre: " + this.getNombre() + " Género: " + this.getGeneroPers() + " Importancia: " + this.getImportancia();
 	}
 	
 
