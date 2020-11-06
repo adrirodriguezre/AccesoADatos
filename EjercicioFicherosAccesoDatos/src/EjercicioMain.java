@@ -1,3 +1,4 @@
+import java.io.File;
 import java.util.ArrayList;
 
 public class EjercicioMain {
@@ -7,11 +8,14 @@ public class EjercicioMain {
 		ProcesamientoFicheroPlano p1= new ProcesamientoFicheroPlano();
 		
 		//String ruta= "C:\\Users\\PC33\\Desktop\\Personajes.txt";
-		String ruta= "/Users/adrian/Desktop/libros.rtf";
+		String home = System.getProperty("user.home");
+		String ruta=(home + File.separator + "Desktop" + File.separator + "libros.txt");
+	
 		
 		ArrayList<Libro> Prueba = new ArrayList();
 		
 		Prueba=p1.leerFichero(ruta);
+		//System.out.println(Prueba);
 
 	}
 
