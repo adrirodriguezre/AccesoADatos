@@ -97,8 +97,7 @@ public class Libro {
 	
 	public String toString() {
 		
-		return "TÃ­tulo: " + this.getTitulo() + " Editorial: " + this.getEditorial() + " Autor: " + this.getAutor() + " Fecha publicaciÃ³n: "
-				+ this.getFechaPubli() + " GÃ©nero: " + this.getGenero() + " \nPersonajes: " + this.getPersonajes();
+		return "Título: " + this.getTitulo() + " Editorial: " + this.getEditorial() + " Autor: " + this.getAutor() + " Fecha publicación: "
+				+ this.getFechaPubli() + " Género: " + this.getGenero() + " \nPersonajes: " + this.getPersonajes();
 	}
-
 }

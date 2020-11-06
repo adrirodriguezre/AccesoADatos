@@ -38,8 +38,7 @@ public class Personajes {
 	
 	public String toString() {
 		
-		return " Nombre: " + this.getNombre() + " GÃ©nero: " + this.getGeneroPers() + " Importancia: " + this.getImportancia();
+		return " Nombre Personaje: " + this.getNombre() + " Género Personaje: " + this.getGeneroPers() + " Importancia: " + this.getImportancia();
 	}
-	
 
 }
