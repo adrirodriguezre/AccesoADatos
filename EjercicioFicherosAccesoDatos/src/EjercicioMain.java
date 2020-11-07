@@ -7,14 +7,20 @@ public class EjercicioMain {
 		
 		ProcesamientoFicheroPlano p1= new ProcesamientoFicheroPlano();
 		
-		String ruta= "C:\\Users\\PC33\\Desktop\\libros.txt";
-		String rutaXML= "C:\\Users\\PC33\\Desktop\\libros.xml";
-	
+		//String ruta= "C:\\Users\\PC33\\Desktop\\Personajes.txt";
+		String home = System.getProperty("user.home");
+		String ruta=(home + File.separator + "Desktop" + File.separator + "libros.txt");
+		String rutaXML=(home + File.separator + "Desktop" + File.separator + "libros.xml");
 	
 		
 		ArrayList<Libro> Prueba = new ArrayList();
+		ArrayList<Libro> arrayLibros = new ArrayList<Libro>();
 		
-		Prueba=p1.leerFichero(ruta);
+		//Prueba=p1.leerFichero(ruta);
+		//p1.guardarFichero(arrayLibros);
+		
+		ProcesamientoFicheroXMLDOM p2 = new ProcesamientoFicheroXMLDOM();
+		p2.leerFichero(rutaXML);
 
 	}
 
